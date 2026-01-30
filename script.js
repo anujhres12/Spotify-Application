@@ -18,7 +18,6 @@ function getRandomRGBAColor() {
 // 🔁 Run automatically every 1 second (1000 ms)
 setInterval(changeColors, 1000);
 
-/* ********************/ ////////*********************************************** */ */
 
 let currentSong = new Audio();
 let songs = [];
