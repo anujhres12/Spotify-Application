@@ -14,14 +14,14 @@ pipeline {
             }
         }
 
-        stage('Run Container') {
+        sstage('Run Container') {
     steps {
         sh '''
         echo "Removing old container if it exists..."
-        docker rm -f spotify-app 2>/dev/null || true
+        docker rm -f spotify-app || true
 
-        echo "Starting new container..."
-        docker run -d --name spotify-app -p 8080:80 spotify-clone:latest
+        echo "Starting new container on port 8082..."
+        docker run -d --name spotify-app -p 8082:80 spotify-clone:latest
         '''
     }
 }
