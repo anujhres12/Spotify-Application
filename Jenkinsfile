@@ -15,15 +15,16 @@ pipeline {
             }
         }
 
-        stage('Run Container') {
-            steps {
-                sh '''
-                docker stop spotify-app || true
-                docker rm spotify-app || true
-                docker run -d --name spotify-app -p 8080:80 spotify-clone:latest
-                '''
-            }
-        }
+       stage('Run Container') {
+    sh '''
+    if [ "$(docker ps -q -f name=spotify-app)" ]; then
+        docker stop spotify-app
+        docker rm spotify-app
+    fi
+
+    docker run -d --name spotify-app -p 8080:80 spotify-clone:latest
+    '''
+}
     }
 
     post {
