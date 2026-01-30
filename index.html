@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img width="24px" class="invert" src="close.svg" alt="" />
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo">
+                    <img class="invert" height="30px" src="logo.svg" alt="" />
+                </div>
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="Home" />Home</li>
+                    <li><img class="invert" src="search.svg" alt="Search" />Search</li>
+                </ul>
+            </div>
+            <div class="library bg-black bg-grey rounded m-1 p-1">
+                <h3>Your Library</h3>
+                <div class="songList">
+                    <ul>
+                        <!-- <li>
+                <img class="invert" width="20px" src="music.svg" alt="" />
+                <div class="info">
+                  <div class="songName">Song Name</div>
+                  <div class="songArtist">Song Artist</div>
+                </div>
+                <img class="invert" width="30px" src="playnow.svg" alt="" />
+              </li> -->
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div>
+                        <div>
+                            <a href="https://www.spotify.com/in-en/legal/" data-encore-id="textLink">
+                                <span data-encore-id="type">Legal</span>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://www.spotify.com/in-en/safetyandprivacy/" data-encore-id="textLink">
+                                <span data-encore-id="type">Safety &amp; Privacy Center</span>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://www.spotify.com/in-en/legal/privacy-policy/" data-encore-id="textLink">
+                                <span data-encore-id="type">Privacy Policy</span>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://www.spotify.com/in-en/legal/cookies-policy/" data-encore-id="textLink">
+                                <span data-encore-id="type">Cookies</span>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" data-encore-id="textLink">
+                                <span data-encore-id="type">About Ads</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/" data-encore-id="textLink">
+                            <span data-encore-id="type">Accessibility</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="English">
+                <button data-testid="language-selection-button"
+                    class="Button-sc-y0gtbx-0 iEnZvo encore-text-body-small-bold e-91000-button--small e-91000-button--leading"
+                    data-encore-id="buttonSecondary" style="
+              display: inline-flex;
+              align-items: center;
+              gap: 6px;
+              white-space: nowrap;
+              background-color: #000000;
+              color: #ffffff;
+              padding: 6px 12px;
+              border-radius: 24px;
+              border: 1px solid #ffffff;
+              cursor: pointer;
+            ">
+                    <span aria-hidden="true" class="e-91000-button__icon-wrapper"
+                        style="display: flex; align-items: center">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" width="14"
+                            height="14" fill="none">
+                            <path fill="#ffffff"
+                                d="M8.152 16H8a8 8 0 1 1 .152 0m-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296M4.877 7.25c.062-1.771.34-3.386.773-4.624q.148-.427.329-.806a6.51 6.51 0 0 0-4.436 5.43zm-3.334 1.5a6.51 6.51 0 0 0 4.436 5.43 8 8 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129zm5.048 0c-.061 1.771-.339 3.386-.772 4.624q-.123.353-.268.674a6.5 6.5 0 0 0 4.071-5.298zm3.031-1.5a6.51 6.51 0 0 0-4.071-5.298q.145.322.268.674c.433 1.238.711 2.853.772 4.624z" />
+                        </svg>
+                    </span>
+
+                    <span>English</span>
+                </button>
+            </div>
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburger">
+                        <img src="hamburger.svg" />
+
+                        <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path fill=""
+                                d="M201.4 297.4C188.9 309.9 188.9 330.2 201.4 342.7L361.4 502.7C373.9 515.2 394.2 515.2 406.7 502.7C419.2 490.2 419.2 469.9 406.7 457.4L269.3 320L406.6 182.6C419.1 170.1 419.1 149.8 406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3L201.3 297.3z" />
+                        </svg>
+
+                        <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path fill=""
+                                d="M439.1 297.4C451.6 309.9 451.6 330.2 439.1 342.7L279.1 502.7C266.6 515.2 246.3 515.2 233.8 502.7C221.3 490.2 221.3 469.9 233.8 457.4L371.2 320L233.9 182.6C221.4 170.1 221.4 149.8 233.9 137.3C246.4 124.8 266.7 124.8 279.2 137.3L439.2 297.3z" />
+                        </svg>
+                    </div>
+                </div>
+              
+                     <input class="searchbar" type="text" placeholder="Search">
+               
+    
+                <div class="buttons">
+                    <button class="signupBtn">Signup</button>
+                    <button class="signupBtn installApp">InstallApp</button>
+                    <button class="loginBtn">Login</button>
+                </div>
+            </div>
+            <div class="spotify-playlist">
+                <h2>Spotify Playlists</h2>
+                <div class="cardContainer">
+                    <div data-folder="Copyright songs" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45px" viewBox="0 0 640 640">
+                                <!-- Green circle background -->
+                                <circle cx="320" cy="320" r="320" fill="#0dce47" />
+                                <!-- Smaller black play icon -->
+                                <g transform="translate(320 320) scale(0.65) translate(-320 -320)">
+                                    <path fill="#000000"
+                                        d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02a85dfb8c25b33da1af9c8f2a" alt="" />
+                        <h3>Ghar kab Aaoge</h3>
+                        <p>Anu Malik, Mithoon, Sonu Nigam, Arijit Singh</p>
+                    </div>
+                   
+          
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo"></div>
+                        <div class="songbuttons">
+                            <img id="previous" src="previous.svg" alt="" />
+                            <img id="play" src="play.svg" alt="" />
+                            <img id="next" src="next.svg" alt="" />
+                        </div>
+                        <div class="volume">
+                            <div class="songtime"></div>
+                            <img class="invert" width="25px" src="volume.svg" alt="" />
+                            <div class="range">
+                                <input type="range" name="Volume">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
